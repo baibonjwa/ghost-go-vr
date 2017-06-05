@@ -92,7 +92,7 @@ task :deploy => :environment do
     command "nvm use node 7.7.1"
     command "yarn install"
     command "yarn bundle"
-    #command 'sed -i -- "s/<\/body>/<script type=\"text\/javascript\" src=\"\/\/s7.addthis.com\/js\/300\/addthis_widget.js#pubid=ra-5818445a7b592e4c\"><\/script><\/body>/g" dist/index.html'
+    command "cp -r static_assets/ vr/"
 
     on :launch do
       command "mkdir -p #{fetch(:current_path)}/tmp/"
