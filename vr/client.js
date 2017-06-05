@@ -8,6 +8,7 @@ import {VRInstance} from 'react-vr-web';
 function init(bundle, parent, options) {
   const vr = new VRInstance(bundle, 'ghost_go_vr', parent, {
     // Add custom options here
+    allowCarmelDeeplink: true,
     ...options,
   });
   vr.render = function() {
