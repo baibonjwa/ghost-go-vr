@@ -4,6 +4,7 @@
 
 // Auto-generated content.
 import {VRInstance} from 'react-vr-web';
+require('webvr-polyfill');
 
 function init(bundle, parent, options) {
   const vr = new VRInstance(bundle, 'ghost_go_vr', parent, {
